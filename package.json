@@ -1,0 +1,21 @@
+{
+  "name": "vueTests",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.10",
+    "vue": "^2.5.16"
+  }
+}
