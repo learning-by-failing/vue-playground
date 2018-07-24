@@ -1,6 +1,7 @@
 <template>
-    <select v-on:change="incrementCounter()">
-        <option v-for="option in options" :value="option.id" >
+    <select v-on:change="save()" v-model="selected">
+        <option disabled value="">Please select one</option>
+        <option v-for="option in options" v-bind:value="option.id">
             {{ option.text }}
         </option>
     </select>
@@ -8,17 +9,17 @@
 
 <script>
     import dataProvider from './services/dataProvider';
-
     export default {
         name: "mauri-select",
         data: function () {
             return {
-                options: dataProvider.getSelectOptions()
+                options: dataProvider.getSelectOptions(),
+                selected: ''
             }
         },
         methods: {
-            incrementCounter()  {
-                alert('hi');
+            save: function(event)  {
+                console.log(`saved ${this.selected}`);
             }
         }
     }

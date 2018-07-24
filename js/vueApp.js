@@ -6,7 +6,6 @@ Vue.component('mauri-counter', Counter);
 Vue.component('mauri-select', Select);
 const vueApp = new Vue(
     {
-        el: '#root',
-        //render: counter => counter(Counter)
+        el: '#root'
     }
 );
