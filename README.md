@@ -1,5 +1,5 @@
 # vue-playground
 just my personal playground for vue
 
-##run
+## run
 just type ```npm run build```

@@ -2,6 +2,7 @@ const path = require('path');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
+    mode: 'none',
     module: {
         rules: [
             {
@@ -24,6 +25,11 @@ module.exports = {
                 ]
             }*/
         ]
+    },
+    resolve: {
+        alias: {
+            vue: 'vue/dist/vue.js'
+        }
     },
     entry: {
         webPackTest: './js/webpackTest',

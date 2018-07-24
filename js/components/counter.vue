@@ -4,7 +4,7 @@
 
 <script>
     export default {
-        name: 'counter',
+        name: 'mauri-counter',
         data: function () {
             return {
                 count: 0
